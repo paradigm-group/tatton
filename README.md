@@ -1,2 +1,3 @@
 # tatton
-Tatton Web Theme
+Tatton Website
+Theme
