@@ -288,15 +288,11 @@
                         }
                     ]);
 
-                    if ($(document).width() > 767) {
-                        map.panBy(0,80);
-                    }
-
                     var currentLocation = window.location.hostname,
                         marker = new google.maps.Marker({
                             position: myLatLng,
                             map: map,
-                            url : 'https://www.google.co.uk/maps/place/326+City+Rd,+London+EC1V/@51.5308505,-0.1040674,17z/data=!3m1!4b1!4m2!3m1!1s0x48761b5c7e763753:0x7827043c00dfbce7'
+                            url : 'https://www.google.co.uk/maps/place/London+EC2N+1AR/@51.5145907,-0.0884503,17z/data=!3m1!4b1!4m2!3m1!1s0x48761cacd516d8b9:0xb2316b0662107b7b'
                         });
 
                     google.maps.event.addListener(marker, 'click', function() {
@@ -315,7 +311,6 @@
 
     $(window).load(function() {
         if ($('#map').length) {
-            //
             tatton.googleMaps.init();
         }
 

@@ -36,10 +36,10 @@
 							</div>
 						</div>
 						<div class='row mt-md'>
-							<div class='col-sm-5'>
+							<div class='col-sm-4'>
 								<img class='img-responsive' src='{$image}'>
 							</div>
-							<div class='col-sm-7'>
+							<div class='col-sm-8'>
 								{$bio}
 							</div>
 						</div>
