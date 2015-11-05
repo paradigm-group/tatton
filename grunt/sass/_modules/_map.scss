@@ -1,0 +1,9 @@
+#map
+{
+	height: 155px;
+
+	@media (min-width: $screen-sm-min) 
+	{
+		height: 400px;
+	}
+}

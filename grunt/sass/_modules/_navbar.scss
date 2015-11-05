@@ -134,4 +134,9 @@
 	display: inline-block;
 	font-size: 30px;
 	color: $investor-green;
+
+	@media screen and (min-width: $screen-sm-min) 
+    {
+		display: none;
+    }
 }
