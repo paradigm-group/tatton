@@ -25,7 +25,7 @@
 					// The Loop
 					if ($the_query->have_posts()): while ($the_query->have_posts()):
 
-							$the_query->the_post();
+						$the_query->the_post();
 
 				?>
 				<p class="mt-lg"><?php the_excerpt() ?></p>
@@ -39,7 +39,28 @@
 			<div class='col-sm-4'>
 				<h4>Latest Video</h4>
 				<div class="video-wrap mt-lg">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/bd7V96rhjnM" frameborder="0" allowfullscreen></iframe>
+					<?php 
+						$cat_id = getCategory($sector);
+
+						$args = array(
+						    'post_type' => 'videos',
+						    'cat' => $cat_id,
+						    'post_status' => 'publish',
+						    'posts_per_page' => 1,
+						);
+
+						$the_query = new WP_Query($args);
+
+						// The Loop
+						if ($the_query->have_posts()): while ($the_query->have_posts()):
+
+							$the_query->the_post();
+
+							the_field('video_embed');
+
+							wp_reset_postdata();
+						endwhile; endif;
+					 ?>
 				</div>
 				<p><a class="more" href="#">More on Youtube</a></p>
 			</div>
