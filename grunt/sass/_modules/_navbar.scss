@@ -95,19 +95,22 @@
 		}
 	}
 
-	> li a
+	li a
 	{
 		padding: 10px 10px!important;
 		color: $text-color!important;
+	}
+
+	> li a
+	{
 		padding-bottom: 27px!important;
 	}
 
-	> li > a:hover,
-	> li.active > a
+	> li > a:hover
 	{
 		color: #fff!important;
 		
-		background-color: $investor-green!important;
+		background-color: #59882b!important;
 	}
 
 	> li:last-child a
@@ -144,11 +147,18 @@
 .investors .navbar--menu
 {
 	li.active > a,
+	li.current-menu-ancestor > a
 	//> li > ul > li.active > a,
 	//> li > ul > li:hover > a,
 	//li:hover > a,
 	{
 		background-color: $investor-green;
+		color: #fff!important;
+	}
+
+	li:hover > a
+	{
+		background-color: #59882b;
 		color: #fff!important;
 	}
 
