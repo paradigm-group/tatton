@@ -27,7 +27,7 @@
 								<p class='people__position cl-{$sector}'>{$position}</p>
 							</div>
 							<div class='col-xs-3 text-right'>
-								<a class='linkedin social--linkedin' href='{$linkedin}'><span class='hidden-xs'>Linkedin Profile:</span></a>
+								<a class='linkedin social--linkedin' href='{$linkedin}' target='_blank'><span class='hidden-xs'>Linkedin Profile:</span></a>
 							</div>
 						</div>
 						<div class='row'>

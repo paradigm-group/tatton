@@ -102,8 +102,10 @@
 
 
     $(window).load(function() {
-        //
-        tatton.googleMaps.init();
+        if ($('#map').length) {
+            //
+            tatton.googleMaps.init();
+        }
 
         // move this
         if ($('.icon').length) {
@@ -114,6 +116,7 @@
 
 
     $(window).scroll(function() {
+
     });
 
 
