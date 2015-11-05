@@ -19,7 +19,7 @@
 
 					$output .= "
 						<div class='services__feature'>
-							<div class='services__icon' style='background-image: url({$image});'></div>
+							<div class='services__icon hidden-xs' style='background-image: url({$image});'></div>
 							<p>{$text}</p>
 						</div>
 					";

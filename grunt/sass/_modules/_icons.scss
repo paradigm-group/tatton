@@ -6,6 +6,14 @@
     position: relative;
 
     background-color: $investor-green;
+
+    &:after
+    {
+        position: absolute;
+        left: 50%;
+        color: #fff;
+        margin-left: -12px;
+    }
 }
 
 .icon--doc
@@ -13,12 +21,10 @@
     background-color: #2c5994;
     &:after
     {
-        position: absolute;
+        
 		top: 11px;
-    	left: 21px;
+    	
         content: '\f1c2';
-
-        color: #fff;
     }
 }
 
@@ -28,12 +34,9 @@
 
     &:after
     {
-        position: absolute;
 		top: 12px;
-    	left: 21px;
-        content: '\f1c1';
 
-        color: #fff;
+        content: '\f1c1';
     }
 }
 
@@ -41,11 +44,8 @@
 {
     &:after
     {
-        position: absolute;
 		top: 12px;
-    	left: 21px;
-        content: '\f08e';
 
-        color: #fff;
+        content: '\f08e';
     }
 }

@@ -43,17 +43,18 @@ if (! defined('ABSPATH')) exit; // Exit if accessed directly
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar__phone-mobile" href="tel: 020 7190 2959"><i class="fa fa-phone"></i></a>
                 <a class="navbar-brand navbar--primary__brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo THEME_DIRECTORY; ?>/assets/img/logo.svg" alt="Tatton Investment Management" class="img-responsive js-svg"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="primary-nav">
-                <ul class="nav navbar-nav navbar-right social social--navbar text-center">
+                <ul class="nav navbar-nav navbar-right social social--navbar text-center hidden-xs">
                     <li><a href="#" class="twitter" title="Twitter"></a></li>
                     <li><a href="#" class="linkedin" title="Linkedin"></a></li>
                     <li><a href="#" class="youtube" title="youtube"></a></li>
                 </ul>
-                <p class="navbar-right navbar__phone"><a href="tel: 020 7190 2959"><span>t//</span>020 7190 2959</a></p>
-                <?php if (is_front_page()): ?>
+                <p class="navbar-right navbar__phone hidden-xs"><a href="tel: 020 7190 2959"><span>t//</span>020 7190 2959</a></p>
+                <?php if (is_front_page() || ($sector == 'contact')): ?>
                 <ul class="nav navbar-nav navbar-right navbar--sections">
                     <li><a class='btn btn-default btn--investor' href="/investors">Investors</a></li>
                     <li><a class='btn btn-default btn--financial' href="/financial-advisors">Financial Advisors</a></li>

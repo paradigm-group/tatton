@@ -9,9 +9,11 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
+	$sector = getSector();
 ?>
 		<footer class="footer">
-
+			
+			<?php if ($sector != 'contact'): ?>
 			<div class="bg-light-grey hidden-xs">
 				<div class='container'>
 					<div class='row'>
@@ -42,6 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					</div>
 				</div>
 			</div>
+			<?php endif; ?>
 
 			<div class="bg-grey pd-md hidden-xs">
 				<div class='container'>

@@ -82,10 +82,16 @@ if (have_posts()) : while (have_posts()) : the_post();
                             $permalink = get_the_permalink();
 
                             $output .= "
-                                <div class='col-xs-3'>
-                                    <img class='img-responsive hidden-xs' src='{$image[0]}'>
-                                    <h5 class='news-snippet__title cl-{$sector} mt-sm'>{$title}</h5>
-                                    <p><a class='more' href='{$permalink}'>Read More</a></p>
+                                <div class='col-sm-3'>
+                                     <div class='row'>
+                                        <div class='col-xs-6 col-sm-12'>
+                                            <img class='img-responsive' src='{$image[0]}'>
+                                        </div>
+                                        <div class='col-xs-6 col-sm-12'>
+                                            <h5 class='news-snippet__title cl-{$sector} mt-sm'>{$title}</h5>
+                                            <p><a class='more' href='{$permalink}'>Read More</a></p>
+                                        </div>
+                                    </div>
                                 </div>
                             ";
                         }
