@@ -1,0 +1,70 @@
+.pagination
+{
+    h2
+    {
+        display: none;
+    }
+    .page-numbers
+    {
+        line-height: 34px;
+
+        position: relative;
+
+        display: inline-block;
+
+        width: 34px;
+        height: 34px;
+        margin: 0 5px;
+
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        &.next,
+        &.prev
+        {
+            text-indent: -9999px;
+            &:after
+            {
+                font-family: 'FontAwesome';
+                font-size: 18px;
+
+                position: absolute;
+                top: -1px;
+
+                text-indent: 0;
+            }
+        }
+        &.next
+        {
+            &:after
+            {
+                left: 9px;
+
+                content: '\f061';
+            }
+        }
+        &.prev
+        {
+            &:after
+            {
+                left: 8px;
+
+                content: '\f060';
+            }
+        }
+    }
+}
+
+
+.investors .pagination .page-numbers
+{
+	border: 1px solid $investor-green;
+
+	color: $investor-green;
+	
+	&.current, &:hover
+	{
+		background-color: $investor-green;
+		color: #fff;
+	}
+}

@@ -1,0 +1,39 @@
+body
+{
+	font-family: 'Hind', sans-serif;
+	font-weight: 400;
+
+	color: $text-colour;
+
+	margin-top: 73px;
+
+	@media screen and (min-width: $screen-sm-min) 
+    {
+    	margin-top: 136px;
+    }
+}
+
+hr
+{
+    margin: 0;
+
+    border: 0;
+    border-top: 1px solid #a1a09c;
+}
+
+.hr--emphasise
+{
+    position: relative;
+    &:before
+    {
+        position: absolute;
+        top: -5px;
+
+        width: 40%;
+        height: 4px;
+
+        content: '';
+
+        background-color: #629630;
+    }
+}

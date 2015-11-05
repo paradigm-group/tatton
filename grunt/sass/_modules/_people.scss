@@ -1,0 +1,11 @@
+.people__position
+{
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	font-size: 12px;
+
+	@media screen and (min-width: $screen-sm-min) 
+    {
+		font-size: 24px;    	
+    }
+}

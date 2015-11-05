@@ -1,0 +1,51 @@
+.icon
+{
+    font-family: 'FontAwesome';
+    font-size: 30px;
+
+    position: relative;
+
+    background-color: $investor-green;
+}
+
+.icon--doc
+{
+    background-color: #2c5994;
+    &:after
+    {
+        position: absolute;
+		top: 11px;
+    	left: 21px;
+        content: '\f1c2';
+
+        color: #fff;
+    }
+}
+
+.icon--pdf
+{
+	background-color: red;
+
+    &:after
+    {
+        position: absolute;
+		top: 12px;
+    	left: 21px;
+        content: '\f1c1';
+
+        color: #fff;
+    }
+}
+
+.icon--web
+{
+    &:after
+    {
+        position: absolute;
+		top: 12px;
+    	left: 21px;
+        content: '\f08e';
+
+        color: #fff;
+    }
+}

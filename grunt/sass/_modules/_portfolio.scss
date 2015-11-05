@@ -1,0 +1,38 @@
+.portfolios__title
+{
+    font-weight: 600;
+
+    padding: 30px;
+
+    margin-bottom: 0;
+
+    color: #fff;
+    background-color: $investor-green;
+}
+
+.portfolios__item
+{
+	border: 1px solid $investor-green;
+	border-top: 0;
+	padding: 30px;
+
+	p
+	{
+		margin: 0;
+	}
+}
+
+.portfolio__title
+{
+	font-weight: 600;
+}
+
+.portfolio__info
+{
+	margin-top: 20px!important;
+	font-weight: 400;
+	strong
+	{
+		color: red;
+	}
+}

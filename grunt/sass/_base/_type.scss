@@ -1,0 +1,164 @@
+h1,
+h2,
+h3,
+h4,
+h5
+{
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+.lead
+{
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	color: $text-colour-dark;
+}
+
+h3
+{
+	font-size: 28px;
+}
+
+h4
+{
+    font-size: 28px;
+}
+
+h5
+{
+	font-size: 21px;
+	font-weight: 600;
+}
+
+h1,
+h2,
+.lead
+{
+    font-size: 16px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        font-size: 38px;
+    }
+}
+
+p
+{
+	font-size: 12px;
+	
+	margin: 0 0 20px 0;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        font-size: 16px;
+
+        margin: 0 0 30px 0;
+    }
+}
+
+a
+{
+	color: $text-colour-dark;
+
+	&:hover
+	{
+		text-decoration: none;
+	}
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.phone-number
+{
+    line-height: 44px;
+
+    position: relative;
+
+    display: inline-block;
+
+    padding-left: 59px;
+    &:before
+    {
+        position: absolute;
+        left: 0;
+
+        width: 44px;
+        height: 44px;
+
+        content: '';
+
+        border-radius: 50%;
+        background-color: $investor-green;
+    }
+    &:after
+    {
+        font-family: 'FontAwesome';
+        font-size: 24px;
+
+        position: absolute;
+        left: 11px;
+
+        color: #fff;
+    }
+}
+
+.more
+{
+    position: relative;
+    font-weight: 600;
+
+    padding-right: 35px;
+    &:after
+    {
+        font-family: 'FontAwesome';
+        font-size: 21px;
+
+        color: $investor-green;
+
+        position: absolute;
+        top: -2px;
+        right: 0;
+
+        content: '\f0a9';
+    }
+}
+
+.content
+{
+    h2
+    {
+        position: relative;
+
+        padding-bottom: 20px;
+        margin: 20px 0;
+
+        @media screen and (min-width: $screen-sm-min) 
+        {
+            padding-bottom: 50px;
+            margin: 50px 0;
+        }
+
+        border-bottom: 1px solid #a1a09c;
+        &:after
+        {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 40%;
+            height: 4px;
+
+            content: '';
+
+            background-color: #629630;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.navbar
+{
+	background-color: $bg;
+	border: none;
+	border-bottom: 8px solid $financial-green;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.investors .navbar
+{
+	border-color: $investor-green;
+}
+
+.navbar--fixed
+{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+.navbar-brand 
+{
+	width: 154px;
+   	height: 45px;
+   	padding: 0;
+   	margin: 10px 0 10px 15px!important;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+		width: 265px;
+    	height: 78px;
+		margin: 25px 0!important;
+    }
+}
+
+.navbar-default 
+{
+	.navbar-toggle
+	{
+		margin-top: 22px;
+		border: 0;
+		border-radius: 0;
+		padding: 0;
+
+		.icon-bar {
+			background-color: $grey-dark;
+			width: 30px;
+		    height: 4px;
+		    border-radius: 0;
+		}
+
+		&:hover
+		{
+			background-color: transparent;
+		}
+	}
+}
+
+.navbar-right
+{
+	margin-right: 0;
+}
+
+.navbar--sections
+{
+	clear: right;
+	font-size: 18px;
+	margin-top: 15px;
+
+	.btn
+	{
+		margin-left: 15px;
+		padding: 10px 15px!important;
+	}
+}
+
+.navbar--menu
+{
+	clear: right;
+	margin-top: 15px;
+
+	li
+	{
+		margin-left: 10px;
+	}
+
+	a
+	{
+		padding: 10px 15px!important;
+		color: $text-color!important;
+	}
+
+	li:last-child a
+	{
+		padding: 10px 30px!important;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+}
+
+.investors .navbar--menu
+{
+	li.active a
+	{
+		background-color: $investor-green;
+		color: #fff!important;
+	}
+
+	li:last-child a
+	{
+		background-color: $financial-green;
+		color: #fff!important;
+	}
+}
+
+.navbar__phone
+{
+	margin: 20px 0 0 0;
+	font-size: 20px;
+
+	span
+	{
+		color: $investor-green;
+	}
+}

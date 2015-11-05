@@ -1,0 +1,49 @@
+.services
+{
+	background-color: #f5f5f5;
+
+	p
+    {
+    	margin-bottom: 0;
+    }
+}
+
+	.services__feature
+	{
+		width: 100%;
+
+		p
+	    {
+	    	margin-bottom: 20px;
+	    }
+
+		@media screen and (min-width: $screen-md-min) 
+	    {
+	    	float: left;
+	        width: 16%;
+	        margin-right: 5%;
+
+	        &:last-child
+	        {
+	        	margin-right: 0;
+	        }
+
+	        p
+		    {
+		    	margin-bottom: 0;
+		    }
+	    }
+	}
+		
+		.services__icon
+		{
+			margin-bottom: 30px;
+
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.investors .services__icon
+		{
+			background-color: $investor-green;
+		}

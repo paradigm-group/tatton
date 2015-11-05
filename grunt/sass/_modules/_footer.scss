@@ -1,0 +1,67 @@
+.footer
+{
+    font-size: 20px;
+}
+
+.footer__address
+{
+	padding: 20px 0 0 100px;
+
+    p
+    {
+        font-size: 20px;
+        line-height: 2;
+
+        color: $text-colour-dark;
+    }
+}
+
+.footer__legals
+{
+    p
+    {
+        font-size: 13px;
+
+        margin-bottom: 0;
+
+        color: #fff;
+    }
+}
+
+.footer__navigation
+{
+    margin: 0;
+    padding-left: 0;
+    line-height: 1;
+
+    li
+    {
+        display: inline-block;
+
+        padding-right: 15px;
+        margin: 0 15px 15px 0;
+
+        border-right: 1px solid #fff;
+
+        &:last-of-type
+        {
+            border-right: 0;
+        }
+    }
+
+    a
+    {
+        color: #fff;
+        font-size: 14px;
+
+        @media screen and (min-width: $screen-sm-min) 
+        {
+            font-size: 17px;
+        }
+
+        &:hover
+        {
+            color: #fff;
+        }
+    }
+}

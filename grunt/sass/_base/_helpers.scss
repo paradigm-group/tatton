@@ -1,0 +1,99 @@
+// margins helpers
+.mt-lg 
+{ 
+	margin-top: 25px;
+
+	@media screen and (min-width: $screen-sm-min) 
+    {
+        margin-top: 50px;
+    }
+}
+
+.mt-md { margin-top: 30px; }
+
+.mt-sm { margin-top: 15px; }
+
+.m-0 { margin: 0; }
+
+.mb-lg 
+{ 
+    margin-bottom: 25px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        margin-bottom: 50px;
+    }
+}
+
+// padding helpers
+.pt-xl 
+{ 
+	padding-top: 20px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        padding-top: 100px;
+    }
+}
+.pb-xl 
+{ 
+	padding-bottom: 20px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        padding-bottom: 100px;
+    }
+}
+.pt-lg 
+{ 
+    padding-top: 20px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        padding-top: 50px;
+    }
+}
+.pb-lg 
+{ 
+    padding-bottom: 20px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        padding-bottom: 50px;
+    }
+}
+.pd-md { padding: 30px 0; }
+
+
+// colours
+.bg-grey-dark { background-color: $grey-dark; }
+.bg-grey { background-color: $grey; }
+.bg-light-grey { background-color: $grey-light; }
+
+.cl-investor { color: $investor-green; }
+.cl-investors { color: $investor-green; }
+
+
+.bdr-t { border-top: 1px solid #a1a09c; }
+
+.cb { clear: both; }
+
+//
+.video-wrap
+{
+    position: relative;
+
+    height: 0;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 56.25%; /* 16:9 */
+}
+.video-wrap iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}

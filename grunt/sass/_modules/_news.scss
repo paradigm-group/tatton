@@ -1,0 +1,59 @@
+.news-snippet__image
+{
+	float: left;
+	margin-right: 20px;
+}
+
+.news-snippet__content
+{
+	p
+	{
+		margin-bottom: 20px;
+	}
+}
+
+.news-snippet__title
+{
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.news__header h1
+{
+	color: #fff;
+}
+
+.news__content
+{
+	img
+	{
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+	
+	p:first-child
+	{
+		font-size: 14px;
+
+		@media screen and (min-width: $screen-sm-min) 
+	    {
+	    	font-size: 18px;
+	    }
+	}
+}
+
+.investors
+{
+	.news__header
+	{
+		background-color: $financial-green;
+	}
+
+	.news__content
+	{
+		p:first-child
+		{
+			color: $investor-green;
+		}
+	}
+}

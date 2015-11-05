@@ -1,0 +1,42 @@
+.btn
+{
+	border: 0;
+}
+
+.btn--arrow
+{
+	position: relative;
+	padding-right: 30px;
+
+	&:after
+    {
+        font-family: 'FontAwesome';
+
+        position: absolute;
+        right: 10px;
+
+        content: '\f0a9';
+    }
+}
+
+.btn--investor
+{
+	color: #fff!important;
+	background-color: $investor-green;
+
+	&:hover
+	{
+		background-color: $investor-green!important;
+	}
+}
+
+.btn--financial
+{
+	color: #fff!important;
+	background-color: $financial-green;
+
+	&:hover
+	{
+		background-color: $financial-green!important;
+	}
+}
