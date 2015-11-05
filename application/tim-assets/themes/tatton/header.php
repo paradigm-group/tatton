@@ -9,6 +9,7 @@
 
 if (! defined('ABSPATH')) exit; // Exit if accessed directly
 
+$sector = getSector();
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -27,10 +28,14 @@ if (! defined('ABSPATH')) exit; // Exit if accessed directly
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="<?php bloginfo('pingback_url'); ?>" rel="pingback">
+    
+    <?php if ($sector == 'contact'): ?>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <?php endif; ?>
 
     <?php wp_head(); ?>
 </head>
-<body class="<?php echo $sector = getSector(); ?>">
+<body class="<?php echo $sector; ?>">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
