@@ -27,11 +27,23 @@
    	padding: 0;
    	margin: 10px 0 10px 15px!important;
 
+   	img
+   	{
+   		width: 154px;
+   		height: 45px;
+   	}
+
     @media screen and (min-width: $screen-sm-min) 
     {
 		width: 265px;
     	height: 78px;
 		margin: 25px 0!important;
+
+		img
+		{
+			width: 265px;
+    		height: 78px;
+		}
     }
 }
 
