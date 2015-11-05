@@ -1,16 +1,41 @@
 <section>
 	<div class='container mt-lg'>
 		<div class='row'>
+			
 			<div class='col-sm-4'>
 				<h4>Twitter</h4>
 				<p class="mt-lg">US created less jobs than expected in August. September rate rise likely now, but god only knows how markets decide to take it!</p>
 				<p><a class="more" href="#">More Twitter</a></p>
 			</div>
+
 			<div class='col-sm-4'>
 				<h4>Recent News</h4>
-				<p class="mt-lg">We combine all your investments under a single umbrella and seek to improve returns by managing your portfolio in a dynamic way that is responsive to changing market conditions.</p>
-				<p><a class="more" href="#">More News</a></p>
+				<?php 
+					$cat_id = getCategory($sector);
+
+					$args = array(
+					    'post_type' => 'post',
+					    'cat' => $cat_id,
+					    'post_status' => 'publish',
+					    'posts_per_page' => 1,
+					);
+
+					$the_query = new WP_Query($args);
+
+					// The Loop
+					if ($the_query->have_posts()): while ($the_query->have_posts()):
+
+							$the_query->the_post();
+
+				?>
+				<p class="mt-lg"><?php the_excerpt() ?></p>
+				<p><a class="more" href="<?php the_permalink(); ?>">Read More</a></p>
+				<?php 
+						wp_reset_postdata();
+					endwhile; endif;
+				 ?>
 			</div>
+
 			<div class='col-sm-4'>
 				<h4>Latest Video</h4>
 				<div class="video-wrap mt-lg">
