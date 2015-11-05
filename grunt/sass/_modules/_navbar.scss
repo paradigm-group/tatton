@@ -99,13 +99,14 @@
 	{
 		padding: 10px 10px!important;
 		color: $text-color!important;
+		padding-bottom: 27px!important;
 	}
 
 	> li > a:hover,
 	> li.active > a
 	{
 		color: #fff!important;
-		padding-bottom: 27px!important;
+		
 		background-color: $investor-green!important;
 	}
 
@@ -115,6 +116,11 @@
 		-webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
 		border-radius: 4px;
+	}
+
+	> li > ul > li > a
+	{
+		padding-bottom: 10px!important;
 	}
 
 	ul
@@ -137,9 +143,10 @@
 
 .investors .navbar--menu
 {
-	> li.active > a,
-	> li > ul > li.active > a,
-	> li > ul > li:hover > a,
+	li.active > a,
+	//> li > ul > li.active > a,
+	//> li > ul > li:hover > a,
+	//li:hover > a,
 	{
 		background-color: $investor-green;
 		color: #fff!important;
