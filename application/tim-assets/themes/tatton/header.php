@@ -36,7 +36,7 @@ $sector = getSector();
     <?php wp_head(); ?>
 </head>
 <body class="<?php echo $sector; ?>">
-    <!--[if lt IE 7]>
+    <!--[if lt IE 9]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <nav class="navbar navbar-default navbar-nested navbar--primary navbar--fixed" id="top" role="navigation">
