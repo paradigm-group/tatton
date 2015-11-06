@@ -1,3 +1,11 @@
+<?php 
+
+	if(isset($_GET['cat'])) 
+	{
+		$tag_filter = (int) $_GET['cat'];
+	}
+
+?>
 <section>
 	<div class='container'>
 		<div class='row mt-lg'>
@@ -35,6 +43,11 @@
 					    'posts_per_page' => 2,
 					    'paged' => $paged
 					);
+
+					if (isset($tag_filter)) 
+					{
+						$args['tag_id'] = $tag_filter;
+					}
 
 					
 					if (query_posts($args))
