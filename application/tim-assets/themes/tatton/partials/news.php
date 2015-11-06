@@ -5,7 +5,22 @@
 				<?php 
 					$tags_array = get_tags();
 
-					var_dump($tags_array);
+					if ($tags_array) 
+					{
+						$permalink = get_the_permalink();
+						$output = "<ul class='news__tags'>";
+						$output .= "<li><a href='{$permalink}'>Latest Tatton Investments</a></li>";
+
+						foreach ($tags_array as $tag) 
+						{
+							$tag_name = ucfirst($tag->name);
+							$term_id = $tag->term_id;
+							$tag_link = $permalink . "?cat={$term_id}";
+							$output .= "<li><a href='{$tag_link}'>{$tag_name}</a></li>";
+						}
+
+						echo $output .= '</ul>';
+					}
 				?>
 			</div>
 			<div class='col-sm-9'>
