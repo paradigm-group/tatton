@@ -2,7 +2,11 @@
 	<div class='container'>
 		<div class='row mt-lg'>
 			<div class='col-sm-3'>
-				
+				<?php 
+					$tags_array = get_tags();
+
+					var_dump($tags_array);
+				?>
 			</div>
 			<div class='col-sm-9'>
 				<?php 
