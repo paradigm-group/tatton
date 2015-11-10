@@ -45,6 +45,10 @@
 					    'paged' => $paged
 					);
 
+					if (isset($tag_filter)) 
+					{
+						$args['tag_id'] = $tag_filter;
+					}
 					
 					if (query_posts($args))
 					{
