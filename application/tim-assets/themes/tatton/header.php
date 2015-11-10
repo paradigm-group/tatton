@@ -65,11 +65,13 @@ $sector = getSector();
                     <li><a class='btn btn-default btn--financial' href="/financial-advisors">Financial Advisors</a></li>
                 </ul>
                 <?php else: ?>
-                    <?php if ($sector == 'financial-advisors'): ?>
-
-                    <?php else: ?>
-                    <?php do_action('display_navigation', 'investor_menu', 'nav navbar-nav navbar-right navbar--menu'); ?>
-                    <?php endif; ?>
+                    <?php
+                        if ($sector == 'financial-advisors'):
+                            do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
+                        else:
+                            do_action('display_navigation', 'investor_menu', 'nav navbar-nav navbar-right navbar--menu');
+                        endif; 
+                    ?>
                 <?php endif; ?>
             </div>
         </div>

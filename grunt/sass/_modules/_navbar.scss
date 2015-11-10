@@ -185,6 +185,28 @@
 	}
 }
 
+.financial-advisors .navbar--menu
+{
+	li.active > a,
+	li.current-menu-ancestor > a
+	{
+		background-color: $financial-green;
+		color: #fff!important;
+	}
+
+	li:hover > a
+	{
+		background-color: #59882b;
+		color: #fff!important;
+	}
+
+	> li:last-child a
+	{
+		background-color: $investor-green;
+		color: #fff!important;
+	}
+}
+
 .navbar__phone
 {
 	margin: 20px 0 0 0;

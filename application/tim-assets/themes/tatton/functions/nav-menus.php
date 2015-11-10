@@ -19,6 +19,7 @@ function ttRegisterNavMenus()
     register_nav_menus(
         array(
             'investor_menu' => __('Investor menu'),
+            'financial_advisor_menu' => __('Financial Advisor menu'),
             'footer_menu' => __('Footer menu')
         )
     );

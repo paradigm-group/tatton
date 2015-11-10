@@ -37,3 +37,8 @@ hr
         background-color: #629630;
     }
 }
+
+.financial-advisors .hr--emphasise:before
+{
+    background-color: $financial-green;
+}

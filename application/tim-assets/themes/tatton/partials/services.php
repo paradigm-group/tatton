@@ -3,6 +3,7 @@
 		<div class='row'>
 			<div class='col-xs-12'>
 				<h2 class="mt-lg"><?php the_sub_field('title'); ?></h2>
+				<hr class="hr--emphasise mt-lg">
 			</div>
 		</div>
 		<div class='row mt-lg'>
