@@ -48,7 +48,7 @@ $sector = getSector();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar__phone-mobile" href="tel: 020 7190 2959"><i class="fa fa-phone"></i></a>
+                <a class="navbar__phone-mobile" href="tel: <?php the_field('contact_phone', 'option'); ?>"><i class="fa fa-phone"></i></a>
                 <a class="navbar-brand navbar--primary__brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo THEME_DIRECTORY; ?>/assets/img/logo.svg" alt="Tatton Investment Management" class="js-svg"></a>
             </div>
 
@@ -58,7 +58,7 @@ $sector = getSector();
                     <li><a href="#" class="linkedin" title="Linkedin"></a></li>
                     <li><a href="#" class="youtube" title="youtube"></a></li>
                 </ul>
-                <p class="navbar-right navbar__phone hidden-xs"><a href="tel: 020 7190 2959"><span>t//</span>020 7190 2959</a></p>
+                <p class="navbar-right navbar__phone hidden-xs"><a href="tel: <?php the_field('contact_phone', 'option'); ?>"><span>t//</span><?php the_field('contact_phone', 'option'); ?></a></p>
                 <?php if (is_front_page() || ($sector == 'contact')): ?>
                 <ul class="nav navbar-nav navbar-right navbar--sections">
                     <li><a class='btn btn-default btn--investor' href="/investors">Investors</a></li>

@@ -186,7 +186,9 @@
 
 .financial-advisors 
 {
-    .social--navbar li
+    .social--navbar li,
+    .social--linkedin:before,
+    .social--footer a:before
     {
         background-color: $financial-green;
     }

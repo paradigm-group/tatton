@@ -147,6 +147,11 @@ ul
     }
 }
 
+.financial-advisors .more:after
+{
+    color: $financial-green;
+}
+
 .content
 {
     h2
@@ -188,4 +193,17 @@ ul
 .investors .content h5
 {
     color: $investor-green;
+}
+
+.financial-advisors
+{
+    .content h5
+    {
+        color: $financial-green;
+    }
+
+    h2:after
+    {
+        background-color: $financial-green;   
+    }
 }

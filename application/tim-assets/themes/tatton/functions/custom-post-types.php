@@ -15,7 +15,6 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
  **/
 function ttRegisterCustomPostTypes()
 {
-    //
     register_post_type('videos',
         array(
             'labels' => array(
@@ -31,7 +30,6 @@ function ttRegisterCustomPostTypes()
         )
     );
 
-    //
     register_post_type('resources',
         array(
             'labels' => array(
@@ -43,6 +41,21 @@ function ttRegisterCustomPostTypes()
             'taxonomies' => array('category', 'post_tag'),
             'supports' => array(
                 'title',
+            )
+        )
+    );
+
+    register_post_type('people',
+        array(
+            'labels' => array(
+                'name' => __('People'),
+                'singular_name' => __('Person')
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'supports' => array(
+                'title',
+                'editor'
             )
         )
     );

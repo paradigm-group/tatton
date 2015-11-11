@@ -4,7 +4,7 @@
  * The template for displaying default pages
  *
  * @package WordPress
- * @subpackage Photolink
+ * @subpackage Tatton
  */
 
 $sector = getSector();
@@ -45,7 +45,7 @@ while(have_posts())
                     include('partials/services.php');
                     break;
 
-                case 'people':
+                case 'our_people':
                     include('partials/people.php');
                     break;
 

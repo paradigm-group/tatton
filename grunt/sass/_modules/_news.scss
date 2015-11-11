@@ -39,6 +39,11 @@
 	}
 }
 
+.financial-advisors .tags li
+{
+	border-color: $financial-green;
+}
+
 .news__header h1
 {
 	color: #fff;
@@ -75,6 +80,22 @@
 		p:first-child
 		{
 			color: $investor-green;
+		}
+	}
+}
+
+.financial-advisors
+{
+	.news__header
+	{
+		background-color: $investor-green;
+	}
+
+	.news__content
+	{
+		p:first-child
+		{
+			color: $financial-green;
 		}
 	}
 }

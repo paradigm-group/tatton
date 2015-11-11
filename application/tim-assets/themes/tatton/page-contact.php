@@ -4,7 +4,7 @@
  * The template for displaying default pages
  *
  * @package WordPress
- * @subpackage Photolink
+ * @subpackage Tatton
  */
 
 get_header();
