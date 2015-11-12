@@ -12,11 +12,60 @@ $sector = getSector();
 get_header();
 
 if (is_user_logged_in()):
+
+while(have_posts())
+{
+    the_post();
+
+    // check for acf flexible content
+    if (have_rows('main_modules')) 
+    {
+        while(have_rows('main_modules'))
+        {
+            the_row();
+
+            // test for layout types and include relevant template
+            switch (get_row_layout())
+            {
+                case 'hero_large':
+                    include('partials/hero-large.php');
+                    break;
+
+                case 'hero':
+                    include('partials/hero.php');
+                    break;
+
+                case 'excerpt':
+                    include('partials/excerpt.php');
+                    break;
+
+                case 'page_content':
+                    include('partials/content.php');
+                    break;
+
+                case 'services':
+                    include('partials/services.php');
+                    break;
+
+                case 'our_people':
+                    include('partials/people.php');
+                    break;
+
+                case 'portfolios':
+                    include('partials/portfolios.php');
+                    break;
+
+                case 'template':
+                    $template = get_sub_field('template_block');
+                    include("partials/{$template}.php");
+                    break;
+            }
+        }
+    }
+} 
+
+else: 
 ?>
-
-
-
-<?php else: ?>
 
 <div class="container">
 	<div class="row">
@@ -26,46 +75,13 @@ if (is_user_logged_in()):
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-xs-5 mb-lg">
-			<form action="">
-				<div class="form-group">
-					<label for="">Username:</label>
-					<input class="form-control" type="text">
-					<label for="">Password:</label>
-					<input class="form-control" type="password">
-				</div>
-				<button type="submit" class="btn btn-default btn--financial">Login</button>
-			</form>
+		<div class="col-sm-5 mb-lg">
+			<?php do_action('custom_login'); ?>
 		</div>
 	</div>
 </div>
 
 <?php
 endif;
-/*
-while(have_posts())
-{
-    the_post();
-
-    $args = array(
-	    'post_type' => 'page',
-	    'post_parent' => $post->ID
-	);
-
-	$the_query = new WP_Query($args);
-
-	// The Loop
-	if ( $the_query->have_posts() ) {
-		echo '<ul>';
-		while ( $the_query->have_posts() ) {
-			$the_query->the_post();
-			echo '<li>' . get_the_title() . '</li>';
-		}
-		echo '</ul>';
-	} else {
-		// no posts found
-	}
-	wp_reset_postdata();
-}*/
 
 get_footer();

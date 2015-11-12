@@ -12,6 +12,11 @@
 	border-color: $investor-green;
 }
 
+.navbar-collapse
+{
+	padding: 0;
+}
+
 .navbar--fixed
 {
 	width: 100%;
@@ -209,7 +214,7 @@
 
 .navbar__phone
 {
-	margin: 20px 0 0 0;
+	margin: 20px 0 0 15px;
 	font-size: 20px;
 
 	span
@@ -221,6 +226,24 @@
 .financial-advisors .navbar__phone span
 {
 	color: $financial-green;
+}
+
+.navbar__logout
+{
+	margin: 19px 0 0 15px;
+	color: #fff;
+	background-color: $investor-green;
+
+	&:hover
+	{
+		color: #fff;
+		background-color: #59882b;	
+	}
+}
+
+.financial-advisors .navbar__logout
+{
+	background-color: $financial-green;
 }
 
 .navbar__phone-mobile

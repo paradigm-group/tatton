@@ -77,7 +77,7 @@ $table_prefix  = 't1m_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-@ini_set('display_errors',0);
+@ini_set('display_errors',1);
 define( 'WP_DEBUG',         true );  // Turn debugging ON
 define( 'WP_DEBUG_DISPLAY', false ); // Turn forced display OFF
 define( 'WP_DEBUG_LOG',     true );  // Turn logging to wp-content/debug.log ON

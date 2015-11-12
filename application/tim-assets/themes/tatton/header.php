@@ -53,6 +53,9 @@ $sector = getSector();
             </div>
 
             <div class="collapse navbar-collapse" id="primary-nav">
+                <?php if(is_user_logged_in()): ?>
+                <a class='btn btn-default navbar-right navbar__logout' href="<?php echo wp_logout_url(get_the_permalink()); ?>">Logout</a>
+                <?php endif; ?>
                 <ul class="nav navbar-nav navbar-right social social--navbar text-center hidden-xs">
                     <li><a href="#" class="twitter" title="Twitter"></a></li>
                     <li><a href="#" class="linkedin" title="Linkedin"></a></li>
