@@ -10,7 +10,9 @@ $image = get_sub_field('image');
 				<div class="row">
 					<div class="col-md-6 hero__text pt-lg pb-lg">
 						<h1 class="hero__title"><?php the_title(); ?></h1>
-						<?php echo $text; ?>
+						<?php if ($text): ?>
+						<p><?php echo $text; ?></p>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>

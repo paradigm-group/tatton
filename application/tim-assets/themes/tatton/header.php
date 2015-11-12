@@ -62,10 +62,10 @@ $sector = getSector();
                     <li><a href="#" class="youtube" title="youtube"></a></li>
                 </ul>
                 <p class="navbar-right navbar__phone hidden-xs"><a href="tel: <?php the_field('contact_phone', 'option'); ?>"><span>t//</span><?php the_field('contact_phone', 'option'); ?></a></p>
-                <?php if (is_front_page() || ($sector == 'contact')): ?>
+                <?php if (is_front_page() || ($sector != 'investors' && $sector != 'financial-advisors')): ?>
                 <ul class="nav navbar-nav navbar-right navbar--sections">
-                    <li><a class='btn btn-default btn--investor' href="/investors">Investors</a></li>
-                    <li><a class='btn btn-default btn--financial' href="/financial-advisors">Financial Advisors</a></li>
+                    <li><a class='investors' href="/investors">Investors</a></li>
+                    <li><a class='financial-advisors' href="/financial-advisors">Financial Advisors</a></li>
                 </ul>
                 <?php else: ?>
                     <?php
