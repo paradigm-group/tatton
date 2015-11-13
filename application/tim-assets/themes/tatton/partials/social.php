@@ -1,14 +1,15 @@
-<section class="bg-lightest-grey">
-	<div class='container mt-lg mb-md'>
+
+<section class="<?php if ($post->post_parent != 0): ?>bg-lightest-grey <?php endif; ?>p-lg">
+	<div class='container'>
 		<div class='row'>
 			
-			<div class='col-sm-4'>
+			<div class='col-sm-4 social-col'>
 				<h4>Twitter</h4>
 				<p class="mt-lg">US created less jobs than expected in August. September rate rise likely now, but god only knows how markets decide to take it!</p>
 				<p><a class="more" href="#">More Twitter</a></p>
 			</div>
 
-			<div class='col-sm-4'>
+			<div class='col-sm-4 social-col'>
 				<h4>Recent News</h4>
 				<?php 
 					$cat_id = getCategory($sector);
@@ -36,7 +37,7 @@
 				 ?>
 			</div>
 
-			<div class='col-sm-4'>
+			<div class='col-sm-4 social-col'>
 				<h4>Latest Video</h4>
 				<div class="video-wrap mt-lg">
 					<?php 

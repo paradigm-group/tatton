@@ -61,6 +61,15 @@
         padding-bottom: 100px;
     }
 }
+.p-lg 
+{ 
+    padding: 20px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        padding: 50px;
+    }
+}
 .pt-lg 
 { 
     padding-top: 20px;
