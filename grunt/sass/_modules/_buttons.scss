@@ -2,6 +2,17 @@
 {
 	border: 0;
 	color: #fff;
+
+	-webkit-transition: background-color 0.3s;
+       -moz-transition: background-color 0.3s;
+        -ms-transition: background-color 0.3s;
+         -o-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+	
+	&:hover
+	{
+		background-color: #59882b!important;
+	}
 }
 
 .btn--arrow
@@ -27,7 +38,7 @@
 
 	&:hover
 	{
-		background-color: $investor-green!important;
+		//background-color: $investor-green!important;
 	}
 }
 
@@ -38,6 +49,6 @@
 
 	&:hover
 	{
-		background-color: $financial-green!important;
+		//background-color: $financial-green!important;
 	}
 }
