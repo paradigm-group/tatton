@@ -131,27 +131,37 @@
 
 .navbar--menu
 {
-	margin: 0;
+	@media screen and (max-width: $screen-sm-min) 
+    {
+		margin: 0;
 
-	a
-	{
-		font-size: 14px;
-		
-		padding: 10px 15px!important;
+		a
+		{
+			font-size: 14px;
+			
+			padding: 10px 15px!important;
 
-		border-top: 1px solid #a1a09c;
-	}
+			border-top: 1px solid #a1a09c;
+		}
 
-	> li > ul > li > a
-	{
-		width: 100%;
-		display: block;
-		padding-left: 50px!important;
-	}
+		li.active a,
+		a:hover
+		{
+			color: #fff!important;
+			background-color: #59882b!important;
+		}
 
-	> li > ul
-	{
-		display: none;
+		> li > ul > li > a
+		{
+			width: 100%;
+			display: block;
+			padding-left: 50px!important;
+		}
+
+		> li > ul
+		{
+			display: none;
+		}
 	}
 
 	@media screen and (min-width: $screen-sm-min) 
