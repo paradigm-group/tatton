@@ -40,7 +40,7 @@
 								<p class='m-0'>{$description}</p>
 							</div>
 							<div class='col-sm-2 text-right'>
-								<a class='btn btn-default btn--arrow bg-{$sector}' href='{$resource}' target='_blank'>{$link_text}</a>
+								<a class='btn btn-default btn--arrow bg-{$sector} btn--resource' href='{$resource}' target='_blank'>{$link_text}</a>
 							</div>
 						</div>
 						<hr class='mt-lg'>

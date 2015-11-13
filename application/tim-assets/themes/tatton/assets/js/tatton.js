@@ -305,7 +305,11 @@
 
 
     $(window).resize(function() {
-
+        if ($(window).width() < 768) {
+            $('.dropdown-toggle').on('click', function() {
+                $(this).next().toggle();
+            });
+        }
     });
 
 
@@ -314,15 +318,19 @@
             tatton.googleMaps.init();
         }
 
-        $('.dropdown-toggle').on('click', function() {
-            $(this).next().toggle();
-        });
-
+        if ($(window).width() < 768) {
+            $('.dropdown-toggle').on('click', function() {
+                $(this).next().toggle();
+            });
+        }
+        
         // move this
         if ($('.icon').length) {
             var iconWidth = $('.icon').width();
             $('.icon').height(iconWidth);
         }
+
+        $('.portfolio').last().addClass('mb-lg');
     });
 
 

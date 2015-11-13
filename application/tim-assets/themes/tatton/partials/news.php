@@ -41,7 +41,7 @@
 					    'post_type' => 'post',
 					    'cat' => $cat_id,
 					    'post_status' => 'publish',
-					    'posts_per_page' => 2,
+					    'posts_per_page' => 5,
 					    'paged' => $paged
 					);
 

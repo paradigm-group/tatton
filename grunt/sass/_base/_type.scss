@@ -135,7 +135,7 @@ ul
     &:after
     {
         font-family: 'FontAwesome';
-        font-size: 21px;
+        font-size: 18px;
 
         color: $investor-green;
 
@@ -144,6 +144,14 @@ ul
         right: 0;
 
         content: '\f0a9';
+    }
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        &:after
+        {
+            font-size: 21px;
+        }
     }
 }
 

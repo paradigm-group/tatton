@@ -10,6 +10,11 @@
     background-color: $investor-green;
 }
 
+.financial-advisors .portfolios__title
+{
+	background-color: $financial-green;
+}
+
 .portfolios__item
 {
 	border: 1px solid $investor-green;
@@ -20,6 +25,11 @@
 	{
 		margin: 0;
 	}
+}
+
+.financial-advisors .portfolios__item
+{
+	border-color: $financial-green;
 }
 
 .portfolio__title

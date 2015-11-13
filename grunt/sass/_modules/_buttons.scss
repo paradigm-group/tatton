@@ -35,20 +35,15 @@
 {
 	color: #fff!important;
 	background-color: $investor-green;
-
-	&:hover
-	{
-		//background-color: $investor-green!important;
-	}
 }
 
 .btn--financial
 {
 	color: #fff!important;
 	background-color: $financial-green;
+}
 
-	&:hover
-	{
-		//background-color: $financial-green!important;
-	}
+.btn--resource
+{
+	margin-top: 10px;
 }

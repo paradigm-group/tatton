@@ -1,8 +1,27 @@
 .social-col
 {
-    p:last-child
+    @media screen and (max-width: $screen-sm-min) 
     {
-        margin-bottom: 0;
+        p:last-child
+        {
+            margin-bottom: 40px;
+        }
+
+        &:last-child
+        {
+            p:last-child
+            {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        p:last-child
+        {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -64,7 +83,7 @@
     position: relative;
     padding: 0 54px 0 0;
     color: $text-colour;
-    line-height: 44px;
+    line-height: 46px;
 
     &:before
     {
@@ -85,6 +104,7 @@
         font-size: 24px;
 
         position: absolute;
+        top: -12px;
         right: 11px;
 
         color: #fff;
