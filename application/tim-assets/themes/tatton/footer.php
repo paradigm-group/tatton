@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 						</div>
 						<div class="col-sm-6 footer__address">
 							<p><?php the_field('contact_address', 'option'); ?></p>
-							<p><a class="" href="<?php the_field('google_maps', 'option'); ?>">View on map</a></p>
+							<p><a class="more more--google" href="<?php the_field('google_maps', 'option'); ?>" target="_blank">View on map</a></p>
 						</div>
 					</div>
 					<div class='row mb-lg'>

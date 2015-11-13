@@ -147,6 +147,15 @@ ul
     }
 }
 
+.more--google
+{
+    &:after
+    {
+        top: -10px;
+        font-size: 26px;
+    }
+}
+
 .financial-advisors .more:after
 {
     color: $financial-green;
