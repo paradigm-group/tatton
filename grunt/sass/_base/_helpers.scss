@@ -9,12 +9,6 @@
     }
 }
 
-.mt-md { margin-top: 30px; }
-
-.mt-sm { margin-top: 15px; }
-
-.m-0 { margin: 0; }
-
 .mb-lg 
 { 
     margin-bottom: 25px;
@@ -24,6 +18,29 @@
         margin-bottom: 50px;
     }
 }
+
+.mt-md 
+{ 
+    margin-top: 15px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        margin-top: 30px;
+    }
+}
+
+.mb-md 
+{ 
+    margin-bottom: 15px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        margin-bottom: 30px;
+    }
+}
+
+.mt-sm { margin-top: 15px; }
+.m-0 { margin: 0; }
 
 // padding helpers
 .pt-xl 
@@ -69,6 +86,7 @@
 .bg-grey-dark { background-color: $grey-dark; }
 .bg-grey { background-color: $grey; }
 .bg-light-grey { background-color: $grey-light; }
+.bg-lightest-grey { background-color: #f5f5f5; }
 
 .cl-investors { color: $investor-green; }
 .cl-financial-advisors { color: $financial-green; }

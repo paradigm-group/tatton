@@ -199,6 +199,11 @@ ul
         font-weight: 600;
         margin-bottom: 30px;
     }
+
+    p:last-child
+    {
+        margin-bottom: 0;
+    }
 }
 
 .investors .content h5

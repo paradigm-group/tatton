@@ -1,5 +1,5 @@
 <section>
-	<div class='container mt-md'>
+	<div class='container'>
 		<div class='row'>
 			<div class='col-xs-12'>
 				<p class="portfolios__title"><?php the_sub_field('portfolio_title'); ?></p>

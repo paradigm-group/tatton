@@ -127,6 +127,22 @@
 {
 	margin: 0;
 
+	a
+	{
+		font-size: 14px;
+		
+		padding: 10px 15px!important;
+
+		border-top: 1px solid #a1a09c;
+	}
+
+	> li > ul > li > a
+	{
+		width: 100%;
+		display: block;
+		padding-left: 30px!important;
+	}
+
 	@media screen and (min-width: $screen-sm-min) 
     {
 		clear: right;
@@ -151,6 +167,7 @@
 			background-color: #fff;
 			padding: 10px 10px!important;
 			color: $text-color!important;
+			border: 0;
 
 			-webkit-transition: background-color 0.3s;
 	           -moz-transition: background-color 0.3s;
@@ -182,6 +199,7 @@
 		> li > ul > li > a
 		{
 			padding-bottom: 10px!important;
+			padding-left: 15px!important;
 		}
 
 		ul

@@ -1,5 +1,5 @@
-<section>
-	<div class='container mt-lg'>
+<section class="bg-lightest-grey">
+	<div class='container mt-lg mb-md'>
 		<div class='row'>
 			
 			<div class='col-sm-4'>
