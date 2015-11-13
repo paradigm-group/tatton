@@ -1,3 +1,13 @@
+.people img
+{
+	margin-bottom: 20px;
+	
+	@media screen and (min-width: $screen-sm-min) 
+    {
+		margin-bottom: 0;	
+    }
+}
+
 .people__position
 {
 	font-family: 'Droid Serif', serif;

@@ -33,7 +33,7 @@
 									<h2 class='people__title'>{$name}</h2>
 									<p class='people__position cl-{$sector}'>{$position}</p>
 								</div>
-								<div class='col-xs-3 text-right'>
+								<div class='col-xs-3 text-right pt-sm'>
 									<a class='linkedin social--linkedin' href='{$linkedin}' target='_blank'><span class='hidden-xs'>Linkedin Profile:</span></a>
 								</div>
 							</div>
