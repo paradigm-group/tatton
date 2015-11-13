@@ -145,7 +145,8 @@
 		}
 
 		li.active a,
-		a:hover
+		a:hover,
+		li.current-menu-ancestor > a
 		{
 			color: #fff!important;
 			background-color: #59882b!important;
@@ -161,6 +162,19 @@
 		> li > ul
 		{
 			display: none;
+		}
+
+		li.dropdown > a
+		{
+			position: relative;
+
+			&:after
+			{
+				font-family: 'FontAwesome';
+				position: absolute;
+				right: 15px;
+				content: '\f0d7';
+			}
 		}
 	}
 

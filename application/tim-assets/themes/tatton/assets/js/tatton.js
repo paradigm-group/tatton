@@ -314,6 +314,10 @@
             tatton.googleMaps.init();
         }
 
+        $('.dropdown-toggle').on('click', function() {
+            $(this).next().toggle();
+        });
+
         // move this
         if ($('.icon').length) {
             var iconWidth = $('.icon').width();
