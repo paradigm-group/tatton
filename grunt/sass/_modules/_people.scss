@@ -1,10 +1,20 @@
 .people img
 {
 	margin-bottom: 20px;
-	
+
 	@media screen and (min-width: $screen-sm-min) 
     {
 		margin-bottom: 0;	
+    }
+}
+
+.people__linkedin
+{
+	margin-top: 0;
+
+	@media screen and (min-width: $screen-sm-min) 
+    {
+		margin-top: 15px;
     }
 }
 

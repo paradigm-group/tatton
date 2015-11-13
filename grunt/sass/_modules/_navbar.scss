@@ -140,7 +140,12 @@
 	{
 		width: 100%;
 		display: block;
-		padding-left: 30px!important;
+		padding-left: 50px!important;
+	}
+
+	> li > ul
+	{
+		display: none;
 	}
 
 	@media screen and (min-width: $screen-sm-min) 
