@@ -53,6 +53,14 @@
     }
 }
 
+.lt-ie9 .navbar-brand
+{
+	@media screen and (min-width: $screen-sm-min) 
+    {
+		background-image: url(../img/logo.png);
+    }
+}
+
 .navbar-default 
 {
 	.navbar-toggle
