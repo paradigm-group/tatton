@@ -41,7 +41,7 @@ class CustomLogin
         }
 
 		echo '
-			<form action="" method="post">
+			<form class="mt-sm" action="" method="post">
 				<div class="form-group">
 					<input type="hidden" name="key" value="'.Encryption::encryption('egg').'">
 					<input type="hidden" name="action" value="'.Encryption::encryption('authenticate').'">

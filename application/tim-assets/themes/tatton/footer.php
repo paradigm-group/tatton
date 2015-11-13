@@ -25,11 +25,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 					<div class="row">
 						<div class="col-sm-6">
 							<ul class="social social--footer">
-								<li><a href="tel:<?php the_field('contact_phone', 'option'); ?>" class="phone" title="Phone"><?php the_field('contact_phone', 'option'); ?></a></li>
-								<li><a href="mailto:<?php the_field('contact_email', 'option'); ?>" class="email" title="Email"><?php the_field('contact_email', 'option'); ?></a></li>
-								<li><a href="<?php the_field('social_twitter', 'option'); ?>" class="twitter" title="Twitter">go to Twitter</a></li>
-			                    <li><a href="<?php the_field('social_linkedin', 'option'); ?>" class="linkedin" title="Linkedin">go to Linkedin</a></li>
-			                    <li><a href="<?php the_field('social_youtube', 'option'); ?>" class="youtube" title="youtube">go to our Youtube channel</a></li>
+								<li><a href="tel:<?php the_field('contact_phone', 'option'); ?>" title="Phone"><i class="fa fa-phone"></i><?php the_field('contact_phone', 'option'); ?></a></li>
+								<li><a href="mailto:<?php the_field('contact_email', 'option'); ?>" title="Email"><i class="fa fa-envelope"></i><?php the_field('contact_email', 'option'); ?></a></li>
+								<li><a href="<?php the_field('social_twitter', 'option'); ?>" title="Twitter"><i class="fa fa-twitter"></i>go to Twitter</a></li>
+			                    <li><a href="<?php the_field('social_linkedin', 'option'); ?>" title="Linkedin"><i class="fa fa-linkedin"></i>go to Linkedin</a></li>
+			                    <li><a href="<?php the_field('social_youtube', 'option'); ?>" title="youtube"><i class="fa fa-youtube"></i>go to our Youtube channel</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-6 footer__address">

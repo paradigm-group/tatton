@@ -188,9 +188,12 @@
             background-color: $investor-green;
         }
 
-        &:after
+        &:after,
+        i
         {
             position: absolute;
+            margin-top: -10px;
+            top: 50%;
             left: 13px;
             color: $grey-light;
         }
