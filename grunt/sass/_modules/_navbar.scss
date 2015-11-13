@@ -95,120 +95,133 @@
 
 .navbar--menu
 {
-	clear: right;
-	margin-top: 18px;
-
+	margin: 0;
+	
 	li
 	{
-		margin-left: 10px;
-		position: relative;
+		
+	}
 
-		&:hover
+	@media screen and (min-width: $screen-sm-min) 
+    {
+		clear: right;
+		margin-top: 18px;
+
+		li
 		{
-			ul
+			margin-left: 10px;
+			position: relative;
+
+			&:hover
+			{
+				ul
+				{
+					display: block;
+				}
+			}
+		}
+
+		li a
+		{
+			background-color: #fff;
+			padding: 10px 10px!important;
+			color: $text-color!important;
+
+			-webkit-transition: background-color 0.3s;
+	           -moz-transition: background-color 0.3s;
+	            -ms-transition: background-color 0.3s;
+	             -o-transition: background-color 0.3s;
+	                transition: background-color 0.3s;
+		}
+
+		> li a
+		{
+			padding-bottom: 27px!important;
+		}
+
+		> li > a:hover
+		{
+			color: #fff!important;
+			
+			background-color: #59882b!important;
+		}
+
+		> li:last-child a
+		{
+			padding: 10px 30px!important;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+
+		> li > ul > li > a
+		{
+			padding-bottom: 10px!important;
+		}
+
+		ul
+		{
+			display: none;
+			position: absolute;
+			top: 57px;
+			width: 180px;
+			list-style-type: none;
+			margin-left: -10px;
+
+			a
 			{
 				display: block;
+				width: 180px;
+				background-color: #fff;
 			}
 		}
 	}
+}
 
-	li a
+@media screen and (min-width: $screen-sm-min) 
+{
+	.investors .navbar--menu
 	{
-		background-color: #fff;
-		padding: 10px 10px!important;
-		color: $text-color!important;
-
-		-webkit-transition: background-color 0.3s;
-           -moz-transition: background-color 0.3s;
-            -ms-transition: background-color 0.3s;
-             -o-transition: background-color 0.3s;
-                transition: background-color 0.3s;
-	}
-
-	> li a
-	{
-		padding-bottom: 27px!important;
-	}
-
-	> li > a:hover
-	{
-		color: #fff!important;
-		
-		background-color: #59882b!important;
-	}
-
-	> li:last-child a
-	{
-		padding: 10px 30px!important;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
-	}
-
-	> li > ul > li > a
-	{
-		padding-bottom: 10px!important;
-	}
-
-	ul
-	{
-		display: none;
-		position: absolute;
-		top: 57px;
-		width: 180px;
-		list-style-type: none;
-		margin-left: -10px;
-
-		a
+		li.active > a,
+		li.current-menu-ancestor > a
 		{
-			display: block;
-			width: 180px;
-			background-color: #fff;
+			background-color: $investor-green;
+			color: #fff!important;
+		}
+
+		li:hover > a
+		{
+			background-color: #59882b;
+			color: #fff!important;
+		}
+
+		> li:last-child a
+		{
+			background-color: $financial-green;
+			color: #fff!important;
 		}
 	}
-}
 
-.investors .navbar--menu
-{
-	li.active > a,
-	li.current-menu-ancestor > a
+	.financial-advisors .navbar--menu
 	{
-		background-color: $investor-green;
-		color: #fff!important;
-	}
+		li.active > a,
+		li.current-menu-ancestor > a
+		{
+			background-color: $financial-green;
+			color: #fff!important;
+		}
 
-	li:hover > a
-	{
-		background-color: #59882b;
-		color: #fff!important;
-	}
+		li:hover > a
+		{
+			background-color: #59882b;
+			color: #fff!important;
+		}
 
-	> li:last-child a
-	{
-		background-color: $financial-green;
-		color: #fff!important;
-	}
-}
-
-.financial-advisors .navbar--menu
-{
-	li.active > a,
-	li.current-menu-ancestor > a
-	{
-		background-color: $financial-green;
-		color: #fff!important;
-	}
-
-	li:hover > a
-	{
-		background-color: #59882b;
-		color: #fff!important;
-	}
-
-	> li:last-child a
-	{
-		background-color: $investor-green;
-		color: #fff!important;
+		> li:last-child a
+		{
+			background-color: $investor-green;
+			color: #fff!important;
+		}
 	}
 }
 
