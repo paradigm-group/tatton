@@ -33,10 +33,13 @@
 						$description = get_field('description');
 						$type = get_field('type');
 
-						if ($type == 'web') {
+						if ($type == 'web') 
+						{
 							$link_text = 'Go to site';
 							$resource = get_field('resource_link');
-						} else {
+						} 
+						else 
+						{
 							$link_text = 'Download';
 							$resource = get_field('resource_file');
 						}

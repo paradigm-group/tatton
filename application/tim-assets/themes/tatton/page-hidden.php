@@ -55,6 +55,10 @@ while(have_posts())
                     include('partials/portfolios.php');
                     break;
 
+                case 'resources':
+                    include('partials/resources.php');
+                    break;
+
                 case 'template':
                     $template = get_sub_field('template_block');
                     include("partials/{$template}.php");
