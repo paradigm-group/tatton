@@ -29,7 +29,8 @@
 						$the_query->the_post();
 
 				?>
-				<p class="mt-lg"><?php the_excerpt() ?></p>
+				<h5 class="mt-lg mb-sm"><?php the_title(); ?></h5>
+				<?php the_excerpt(); ?>
 				<p><a class="more" href="<?php the_permalink(); ?>">Read More</a></p>
 				<?php 
 						wp_reset_postdata();

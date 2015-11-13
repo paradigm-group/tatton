@@ -92,6 +92,12 @@
 		padding: 10px 15px!important;
 
 		border-top: 1px solid #a1a09c;
+
+		&:hover
+		{
+			color: #fff!important;
+			background-color: #59882b!important;
+		}
 	}
 
 	@media screen and (min-width: $screen-sm-min) 

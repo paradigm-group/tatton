@@ -44,7 +44,7 @@ add_theme_support('post-thumbnails');
  */
 function ttExcerptLength($length) 
 {
-  return 22;
+  return 32;
 }
 add_filter('excerpt_length', 'ttExcerptLength', 999);
 
