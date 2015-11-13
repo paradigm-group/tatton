@@ -1,4 +1,4 @@
-<section>
+<section class='mb-lg'>
 	<div class='container'>
 		<div class='row'>
 			<div class='col-xs-12'>
