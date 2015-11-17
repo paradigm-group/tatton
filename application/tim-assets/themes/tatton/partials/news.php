@@ -8,7 +8,7 @@
 ?>
 <section>
 	<div class='container'>
-		<div class='row mt-lg'>
+		<div class='row'>
 			<div class='col-sm-3'>
 				<?php 
 					$tags_array = get_tags();
@@ -16,7 +16,7 @@
 					if ($tags_array) 
 					{
 						$permalink = get_the_permalink();
-						$output = "<ul class='tags'>";
+						$output = "<ul class='tags mt-lg'>";
 						$output .= "<li><a href='{$permalink}'>Latest Tatton Investments</a></li>";
 
 						foreach ($tags_array as $tag) 
@@ -53,7 +53,7 @@
 					
 					if (query_posts($args))
 					{
-						$output = '';
+						$output = "<hr class='hr--emphasise mt-lg mb-lg'>";
 
 						if (have_posts())
 						{
