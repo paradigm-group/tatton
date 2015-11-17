@@ -1,4 +1,4 @@
-<section class="<?php if ($post->post_parent != 0): ?>bg-lightest-grey <?php endif; ?>p-lg">
+<section class="<?php if ($post->post_parent != 0): ?>bg-lightest-grey <?php endif; ?>pt-lg pb-lg">
 	<div class='container'>
 		<div class='row'>
 			

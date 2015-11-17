@@ -83,7 +83,12 @@
     position: relative;
     padding: 0 54px 0 0;
     color: $text-colour;
-    line-height: 46px;
+    line-height: 43px;
+
+    @media screen and (min-width: $screen-sm-min) 
+    {
+        line-height: 46px;
+    }
 
     &:before
     {
