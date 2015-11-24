@@ -18,7 +18,7 @@ $image = get_sub_field('image');
 						<p class="hidden-xs pb-xl">How can Tatton Investment Management help you?</p>
 						<ul class="nav section__nav section__nav--hero">
 				            <li><a class="btn btn-default btn-lg btn--investor" href="/investors/">Investor?</a></li>
-				            <li><a class="btn btn-default btn-lg btn--financial" href="/financial-advisors/">Financial Advisor?</a></li>
+				            <li><a class="btn btn-default btn-lg btn--financial" href="/financial-advisers/">Financial Adviser?</a></li>
 				        </ul>
 						<?php endif; ?>
 					</div>

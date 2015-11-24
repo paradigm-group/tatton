@@ -140,7 +140,7 @@
 			background-color: $investor-green!important;
 			
 		}
-		.financial-advisors
+		.financial-advisers
 		{
 			background-color: $financial-green!important;
 		}
@@ -298,7 +298,7 @@
 		}
 	}
 
-	.financial-advisors .navbar--menu
+	.financial-advisers .navbar--menu
 	{
 		li.active > a,
 		li.current-menu-ancestor > a
@@ -332,7 +332,7 @@
 	}
 }
 
-.financial-advisors .navbar__phone span
+.financial-advisers .navbar__phone span
 {
 	color: $financial-green;
 }
@@ -350,7 +350,7 @@
 	}
 }
 
-.financial-advisors .navbar__logout
+.financial-advisers .navbar__logout
 {
 	background-color: $financial-green;
 }
