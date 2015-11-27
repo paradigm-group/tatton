@@ -26,7 +26,7 @@ remove_action('wp_head', 'wlwmanifest_link');
 /**
  * Remove the admin bar from front end
  */
-add_filter('show_admin_bar', '__return_false');
+//add_filter('show_admin_bar', '__return_false');
 
 /**
  * Create a constant for the template directory

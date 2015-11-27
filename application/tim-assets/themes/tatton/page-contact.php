@@ -8,8 +8,32 @@
  */
 
 get_header();
+
+while(have_posts())
+{
+    the_post();
+
+    // check for acf flexible content
+    if (have_rows('main_modules')) 
+    {
+        while(have_rows('main_modules'))
+        {
+            the_row();
+
+            // test for layout types and include relevant template
+            switch (get_row_layout())
+            {
+
+                case 'hero':
+                    include('partials/hero.php');
+                    break;
+            }
+        }
+    }
+}
 ?>
-<section>
+
+<!--section>
     <div class="hero">
         <div class="hero__overlay"></div>
         <div class="hero__content">
@@ -22,7 +46,7 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section-->
 <section>
     <div class='container mt-lg mb-lg'>
         <div class='row'>
