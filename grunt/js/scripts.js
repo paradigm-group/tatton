@@ -21,6 +21,9 @@
                     var url = $(this).attr("src");
                     $(this).attr("src",url+"?wmode=transparent");
                 });
+
+                //
+                this.checkForArchiveLinks();
             },
 
 
@@ -39,6 +42,23 @@
                     var iconWidth = $('.services__icon').width();
 
                     $('.services__icon').height(iconWidth);
+                }
+            },
+
+
+            //
+            checkForArchiveLinks: function() {
+                if ($('.tags--monthly')) {
+                    pathname = window.location.pathname;
+
+                    $('.tags--monthly a').each(function() {
+                        var url = $(this).attr('href'),
+                            segments = url.split('/'),
+                            year = segments[3],
+                            month = segments[4];
+                            
+                        $(this).attr('href', pathname + '?date=' + year + '/' + month);
+                    });
                 }
             },
 

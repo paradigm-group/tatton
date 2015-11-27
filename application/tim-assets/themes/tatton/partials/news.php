@@ -2,7 +2,13 @@
 
 	if(isset($_GET['cat'])) 
 	{
-		$tag_filter = (int) $_GET['cat'];
+		$cat_filter = (int) $_GET['cat'];
+	}
+
+	if(isset($_GET['date'])) 
+	{
+		$dates = (string) $_GET['date'];
+		$date_array = explode('/', $dates);
 	}
 
 ?>
@@ -30,6 +36,23 @@
 
 						echo $output .= '</ul>';
 					}
+
+
+					$args = array(
+						'type'            => 'monthly',
+						'limit'           => '',
+						'format'          => 'html', 
+						'before'          => '',
+						'after'           => '',
+						'show_post_count' => false,
+						'echo'            => 1,
+						'order'           => 'DESC'
+					);
+
+					echo "<ul class='tags tags--monthly mt-lg'>";
+					wp_get_archives($args);
+					echo '</ul>';
+
 				?>
 			</div>
 			<div class='col-sm-9'>
@@ -45,11 +68,18 @@
 					    'paged' => $paged
 					);
 
-					if (isset($tag_filter)) 
+					if (isset($cat_filter)) 
 					{
-						$args['tag_id'] = $tag_filter;
+						$args['tag_id'] = $cat_filter;
 					}
 
+					if (isset($date_array)) 
+					{
+						$args['date_query'] = array(
+							'month' => $date_array[1],
+							'year' => $date_array[0]
+						);
+					}
 					
 					if (query_posts($args))
 					{

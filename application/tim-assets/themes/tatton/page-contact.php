@@ -32,21 +32,6 @@ while(have_posts())
     }
 }
 ?>
-
-<!--section>
-    <div class="hero">
-        <div class="hero__overlay"></div>
-        <div class="hero__content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 hero__text pt-lg pb-lg">
-                        <h1 class="hero__title"><?php the_title(); ?></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section-->
 <section>
     <div class='container mt-lg mb-lg'>
         <div class='row'>
